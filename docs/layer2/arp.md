@@ -38,3 +38,11 @@ struct arphdr
 #endif
   };
 ```
+
+| field | member variable | count of bits | overview |
+| --- | --- | --- | --- |
+| Format of hardware address | ar_hdr | 16 | ハードウェアタイプ |
+| Format of protocol address | ar_pro | 16 | プロトコルタイプ |
+| Length of hardware address | ar_hln | 8 | ハードウェアアドレスサイズ |
+| Length of protocol address | ar_pln | 8 | プロトコルアドレスサイズ |
+|  ARP opcode (command) | ar_op | 16 | オペレーションコード |
