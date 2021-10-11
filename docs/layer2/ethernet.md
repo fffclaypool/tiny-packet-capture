@@ -10,3 +10,9 @@ struct ether_header
   u_int16_t ether_type;                 /* packet type ID field */
 } __attribute__ ((__packed__));
 ```
+
+| field | member variable | count of bits | overview |
+| --- | --- | --- | --- |
+| destination eth addr | ether_dhost | 48 | 宛先MACアドレス |
+| source ether addr | ether_shost | 48 | 送信元MACアドレス |
+| packet type ID field | ether_type | 16 | タイプ |

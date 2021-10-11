@@ -37,3 +37,22 @@ struct tcphdr
     u_int16_t urg_ptr;
 };
 ```
+
+| field | member variable | count of bits | overview |
+| --- | --- | --- | --- |
+| source port | source | 16 | 送信元ポート番号の値 |
+| destination port | dest | 16 | 宛先のポート番号の値 |
+| sequence number | seq | 32 | シーケンス番号 |
+| acknowledgement number | ack_seq | 32 | 確認応答番号 |
+| data offset | doff | 4 | データオフセット |
+| reserved | res1 | 4 | 予約領域 |
+| reserved | res2 | 2 | 予約領域 |
+| URG | urg | 1 | 緊急を表すフラグ |
+| ACK | ack | 1 | 確認応答を表すフラグ |
+| PSH | psh | 1 | 速やかにアプリケーションにデータを渡すフラグ |
+| RST | rst | 1 | コネクションを強制切断するフラグ |
+| SYN | syn | 1 | コネクションを開始するフラグ |
+| FIN | fin | 1 | コネクションを終了するフラグ |
+| window | window | 16 | 受信ウィンドウ |
+| checksum  | check | 16 | チェックサム |
+| urgent pointer  | urg_ptr | 16 | 緊急ポインタ |

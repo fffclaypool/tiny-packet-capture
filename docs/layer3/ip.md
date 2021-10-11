@@ -37,3 +37,17 @@ struct in_addr
     in_addr_t s_addr;
   };
 ```
+
+| field | member variable | count of bits | overview |
+| --- | --- | --- | --- |
+| version | ip_v | 4 | バージョン |
+| header length | ip_hl | 4 | ヘッダー長 |
+| type of service | ip_tos | 8 | サービスのタイプ |
+| total length | ip_len | 16 | パケット長 |
+| identification | ip_id | 16 | 識別子 |
+| fragment offset field | ip_off | 16 | フラグメントオフセット |
+| time to live | ip_ttl | 8 | TTL(Time To Live) |
+| protocol | ip_p | 8 | プロトコル番号 |
+| checksum | ip_sum | 16 | ヘッダーチェックサム |
+| source address | source | 32 | 送信元IPアドレス |
+| dest address | dest | 32 | 宛先IPアドレス |

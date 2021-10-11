@@ -11,3 +11,10 @@ struct udphdr
   u_int16_t check;
 };
 ```
+
+| field | member variable | count of bits | overview |
+| --- | --- | --- | --- |
+| source port | source | 16 | 送信元ポート番号の値 |
+| destination port | dest | 16 | 宛先のポート番号の値 |
+| length | len | 16 | UDPデータグラム長 |
+| checksum  | check | 16 | チェックサム |
